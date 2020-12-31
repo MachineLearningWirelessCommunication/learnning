@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>姓名：{{params.name}}</h1>
+    <h1>
+        年龄：{{params.age}}
+        (
+            {% if params.age<=18 %}
+                未成年人{{ params.age }}
+            {% elif params.age<50 %}
+                青年人{{ params.age }}
+            {% else %}
+                老年人{{ params.age }}
+            {% endif %}
+        )
+    </h1>
+
+    <h1>lst：{{params.lst}}</h1>
+    <h1>lst[0]：{{params.lst[0]}}</h1>
+    <h1>lst[1]：{{params.lst.1}}</h1>
+    <h1>tup：{{params.tup}}</h1>
+    <h1>tup[0]：{{params.tup.0}}</h1>
+    <h1>dic：{{params.dic}}</h1>
+    <h1>dic[name]：{{params.dic['姓名']}}</h1>
+    <h1>dogName：{{params.dog.name}}</h1>
+</body>
+</html>

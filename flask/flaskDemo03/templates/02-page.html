@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-page</title>
+</head>
+<body>
+    <form action="/02-get" method="get">
+        关键字：<input type="text" name="kw">
+        <input type="submit" value="搜索">
+    </form>
+    <a href="/02-get?kw=杨中林">杨中林</a>
+    <form action="/03-post" method="post">
+        <p>
+            用户名称：<input type="text" name="uname">
+        </p>
+        <p>
+            用户密码：<input type="password" name="upwd">
+        </p>
+        <p>
+            <input type="submit" name="提交">
+        </p>
+    </form>
+</body>
+</html>
